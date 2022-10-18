@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --bg-primary-color: #0f1722;
+    --bg-secondary-color: #1d293a;
+    --bg-ternary-color: #354357;
+    --bg-btn-hover: #6c63ff;
+    --tx-color: #FFFFFF;
+}
+
+* {
+    font-family: Montserrat;
+    margin: 0;
+    font-size: 16px;
+
+}
+
+body {
+    background-color: var(--bg-primary-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0;
+    color: var(--tx-color);
+    font-size: 2em;
+}
+
+
+
+#calculator {
+	background-color: var(--bg-secondary-color);
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+#screen-container {
+    margin: 0 auto 30px auto;
+    width: 258px;
+    height: 70px;
+    border: 1px solid var(--bg-ternary-color);
+    text-align: right;
+    box-sizing: border-box;
+    overflow: hidden;
+    white-space: nowrap;
+    padding: 10px;
+}
+
+#upper-number, #result-number {
+	float: right;
+    color: var(--tx-color);
+}
+
+#result-number {
+	font-weight: bold;
+    margin-top: 5px;
+    font-size: 22px;
+    clear: both;
+}
+
+#btn-container {
+	position: relative;
+    margin: 0 auto 15px auto;
+    width: 300px;
+    text-align: center;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 7.5px;
+    line-height: 50px;
+    text-align: center;
+    color: var(--tx-color);
+    background-color: var(--bg-ternary-color);
+    font-weight: bold;
+    font-size: 18px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+     background-color: var(--bg-btn-hover);
+}
+
+#ac-btn {
+	margin-left: -200px;
+}
+
+#division-btn {
+	position: absolute;
+    right: 14px;
+}
+
+#ac-btn,
+#division-btn,
+#minus-btn,
+#plus-btn,
+#equal-btn,
+#zero-btn,
+#dot-btn,
+#multiplication-btn {
+	font-weight: 300;
+}
+
+#equals-btn {
+	width: 120px;
+    font-size: 22px;
+}
